@@ -1,0 +1,6 @@
+{
+  "name": "The Palm Hall",
+  "description": "Premier Wedding & Events Venue in Peshawar with capacity up to 800 guests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
