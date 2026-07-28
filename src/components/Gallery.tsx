@@ -1,8 +1,40 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Maximize2, Sparkles, Filter } from 'lucide-react';
-import { GALLERY_ITEMS, GalleryItem } from '../data/businessData';
 
+interface GalleryItem {
+  id: number;
+  imageUrl: string;
+  title: string;
+  category: string;
+}
+
+const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 1,
+    imageUrl: "/vip_lounge_interior_1785153717935.jpg",
+    title: "VIP Lounge",
+    category: "VIP Lounge"
+  },
+  {
+    id: 2,
+    imageUrl: "/mirror_aisle_walkway_1785153690742.jpg",
+    title: "Mirror Walkway",
+    category: "Entrance & Aisle"
+  },
+  {
+    id: 3,
+    imageUrl: "/hero_hall_overview_1785153615544.jpg",
+    title: "Grand Hall",
+    category: "Hall Interior"
+  },
+  {
+    id: 4,
+    imageUrl: "/stage_decor_crystal_1785153657293.jpg",
+    title: "Stage Decoration",
+    category: "Stage Setup"
+  }
+];
 interface GalleryProps {
   onSelectItem: (item: GalleryItem) => void;
 }
